@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.nav__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(#9e56ca 15%, transparent 16%), linear-gradient(45deg, transparent 49%, #9e56ca 49% 51%, transparent 51%), linear-gradient(-45deg, transparent 49%, #9e56ca 49% 51%, transparent 51%);
+    background-size: 6em 6em;
+    background-color: #242424;
+    opacity: 1
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #F3F5FC; */
+    background: rgb(2, 0, 36);
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(243, 245, 252, 1) 0%, rgba(74, 73, 136, 1) 100%);
+    border-radius: 5px;
+    min-height: 80vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 0;
+}
+
+textarea {
+    font-weight: 500;
+    text-align: center;
+}
+
+.informacion {
+    font-style: italic;
+}
+
+.text-area,
+.msj {
+    font-size: 2rem;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.msj {
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#footer {
+    position: absolute;
+    width: 100%;
+    height: 2.5rem;
+    font-weight: 600;
+}
+
+
+
+/* MEDIA QUERY */
+@media screen and (max-width: 960px) {
+    .contenedor {
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+
+    .text-area {
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+
+    .copia {
+        margin-top: 20px;
+        width: 150px;
+    }
+}

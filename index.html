@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <title>Encriptador - ONE</title>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <div class="nav__logo">
+        <a class="navbar-brand" href="https://www.linkedin.com/in/spaternostro99/" target="_blank">
+            <img src="./img/logo-white.png" alt="Logo" height="auto" width="500" class="img-fluid logo">
+        </a>
+    </div>
+
+    <!-- MAIN -->
+    <div class="container-fluid text-center contenedor ">
+
+        <div class="col-sm col-md col-lg-6">
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+
+            <div>
+                <h6 class="informacion">*Solo letras minúsculas, sin acentos ni caracteres especiales</h6>
+            </div>
+
+            <div class="btn">
+                <button class="btn btn-primary btn-lg" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn btn-secondary btn-lg" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+
+        </div>
+
+        <div class="col-sm col-md col-lg-6">
+
+            <textarea class="msj" cols="30" rows="10"></textarea>
+
+            <div>
+                <button class="btn btn-dark btn-lg copia" onclick="copiar()">Copiar</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="card text-center" id="footer">
+
+        <div class="card-header">
+            <p>Encriptador de texto - JavaScript</p>
+        </div>
+
+        <div class="card-body">
+            <h5 class="card-title">Sebastian Paternostro</h5>
+            <p class="card-text">Estudiante de la beca ONE de Alura/Oracle</p>
+
+            <a href="https://app.aluracursos.com/user/sPaternostro" target="_blank" class="btn btn-outline-secondary ">
+                <i class="uil uil-letter-english-a"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/spaternostro99/" target="_blank" class="btn btn-outline-secondary ">
+                <i class="bi bi-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/sPaternostro" target="_blank" class="btn btn-outline-secondary ">
+                <i class="bi bi-github"></i>
+            </a>
+
+        </div>
+
+        <div class="card-footer text-body-secondary">
+            2023
+        </div>
+
+    </div>
+
+
+
+    <!-- JS -->
+    <script src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
